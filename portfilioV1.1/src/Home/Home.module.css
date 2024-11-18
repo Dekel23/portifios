@@ -1,0 +1,83 @@
+.homeContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 64px);
+    justify-content: center;
+}
+
+.homeContainer .greeting{
+    font-size: 28px;
+    margin: 16px 0px;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.homeContainer .introducing{
+    font-size: 32px;
+    margin: 16px 0px;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-play-state: paused;
+}
+
+.homeContainer .introducing .name{
+    font-size: 36px;
+    color: var(--orange);
+}
+
+.homeContainer .role{
+    font-size: 24px;
+    margin: 16px;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-play-state: paused;
+}
+
+.homeContainer .boxCV{
+    padding: 5px 15px;
+    border: 3px solid var(--aqua);
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--aqua);
+    margin: 16px;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-play-state: paused;
+    transition: background-color 0.5s, color 0.3s;
+    cursor: pointer;
+}
+
+.homeContainer .boxCV:hover{
+    background-color: var(--aqua);
+    color: hsl(0, 0%, 7%);
+}
+
+.homeContainer .boxCV .cv{
+    color: var(--orange);
+    font-size: 20px;
+}
+
+.homeContainer .boxCV.flash{
+    animation: flash 0.2s ease-out;
+}
+
+@keyframes fadeInUp{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes flash{
+    0% {
+        background-color: var(--aqua);
+    }
+    50% {
+        background-color: hsl(210, 90%, 80%);
+    }
+    100% {
+        background-color: var(--aqua);
+    }
+}

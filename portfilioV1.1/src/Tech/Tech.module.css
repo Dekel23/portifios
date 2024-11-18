@@ -1,0 +1,33 @@
+.techContainer {
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 105px);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.techCard {
+    background-color: hsl(0, 0%, 11%);
+    border: 1px solid hsl(0, 0%, 11%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.techCard:hover{
+    background-color: hsl(0, 0%, 12%);
+    border: 1px double var(--orange);
+}
+
+.techIcon {
+    margin: 2px 4px;
+    border-radius: 20%;
+    display: inline-flex;
+}
+
+.techInfo {
+    margin: 0px 3px 0px 0px;
+    color: var(--aqua);
+    font-size: 16px;
+    font-weight: normal;
+}

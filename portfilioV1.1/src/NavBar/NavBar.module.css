@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    height: 32px;
+    padding: 16px 0px;
+    margin: 0px;
+}
+
+.navbar li{
+    transition: 0.3s;
+}
+
+.navbar li:hover{
+    transform: scale(1.15);
+}
+
+.navbar li a img{
+    height: 32px;
+}

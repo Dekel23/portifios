@@ -1,0 +1,12 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --orange: hsl(40, 100%, 50%);
+    --aqua: hsl(210, 90%, 60%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, hsl(0, 0%, 0%), hsl(0, 0%, 20%));
+    background-repeat: no-repeat;
+}
