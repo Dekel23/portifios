@@ -28,13 +28,13 @@ const CustomTooltip = ({ active, payload }) => {
 const GithubLanguageStats = () => {
   const [languageStats, setLanguageStats] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(null); 
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const token = import.meta.env.REACT_APP_GITHUB_TOKEN;
-        const cacheExpiration = 3600000; // 1 hour in milliseconds
+        const token = import.meta.env.VITE_GITHUB_TOKEN;
+        const cacheExpiration = 3600000;
         const cachedData = localStorage.getItem('githubLanguageStats');
 
         if (cachedData && Date.now() - JSON.parse(cachedData).timestamp < cacheExpiration) {
