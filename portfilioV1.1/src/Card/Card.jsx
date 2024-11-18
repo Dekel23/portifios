@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styles from './Card.module.css'
 import Tech from '../Tech/Tech'
 import Gallery from '../Gallery/Gallery'
+import GithubLanguageStats from '../GitHubLangStats'
 
 function Card({id, headLine = "", paragraph = ""}){
     const cardRef = useRef(null);
@@ -41,6 +42,7 @@ function Card({id, headLine = "", paragraph = ""}){
                     className={styles.arrow}
                 />
                 <Gallery id={`${id}`}></Gallery>
+                {id === "Projects" ? <GithubLanguageStats /> : null}
             </div>
         </div>
     )
