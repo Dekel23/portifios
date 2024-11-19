@@ -50,8 +50,13 @@ function Gallery({id}) {
                     />
                 ))}
             </div>
-            <button className={styles.prev} onClick={prev}>&#10094;</button>
-            <button className={styles.next} onClick={next}>&#10095;</button>
+            {files.length > 0 && (
+                <>
+                    <button className={styles.prev} onClick={prev}>&#10094;</button>
+                    <button className={styles.next} onClick={next}>&#10095;</button>
+                </>
+            )}
+
         </div>
     );  
 }
