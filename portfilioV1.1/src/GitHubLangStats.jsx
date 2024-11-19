@@ -117,9 +117,9 @@ const GithubLanguageStats = () => {
                     data={languageStats}
                     dataKey="value"
                     nameKey="name"
-                    cx="50%"
+                    cx="46%"
                     cy="40%"
-                    outerRadius={80}
+                    outerRadius={95}
                     label={({ name, percentage }) => `${name} (${percentage}%)`}
                     style={{ fontSize: '0.8rem' }}
                 >
